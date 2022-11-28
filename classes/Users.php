@@ -79,7 +79,7 @@ class Users{
     }elseif(!preg_match("#[a-z]+#",$password)) {
       $msg = '<div class="alert alert-danger alert-dismissible mt-3" id="flash-msg">
 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-<strong>Error !</strong> Your Password Must Contain At Least 1 Number !</div>';
+<strong>Error !</strong> Your Password Must Contain At Least 1 Letter !</div>';
         return $msg;
     }elseif (filter_var($email, FILTER_VALIDATE_EMAIL === FALSE)) {
       $msg = '<div class="alert alert-danger alert-dismissible mt-3" id="flash-msg">
